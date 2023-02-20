@@ -1,90 +1,182 @@
-.table {
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-links {
     display: flex;
-    justify-content: space-evenly ;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: rgba(106, 218, 106, 0.763);
+}
+/*Green, orange, and purple.*/
+
+.navbar-anton {
+    color: rgb(132, 86, 0);
 }
 
-img {
-    width: 200px;
-}
-
-.country-item {
-    width: 200px;
-    align-self: center;
-}
-
-.item {
-    width: 200px;
-    align-self: center;
-}
-
-.table-hover {
-    cursor: pointer;
-}
-
-.table-nth:nth-child(even){
-    background-color: #f2f2f2;
-}
-
-.table-hover:hover {
-    background-color: #90A4B0;
-}
-
-.container-list {
-    overflow-y: hidden;
-    overflow-x: scroll;
-    min-width: 1000px;
-}
-
-.next-btn {
-    cursor: pointer;
+.dot {
+    font-size: 50px;
     font-weight: bolder;
-    background-color: white;
-    margin: 10px;
-    width: 100px;
+    color: rgb(132, 86, 0);
 }
 
-.prev-btn {
+.navbar-link {
+    text-decoration: none;
+    color: rgb(111, 2, 111);
+}
+
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile {
+    width: 400px;
+    margin-left: 10px;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.work-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-work-detail {
     cursor: pointer;
-    font-weight: bolder;
-    background-color: white;
-    margin: 10px;
-    width: 100px;
+    font-size: xx-large;
+    margin-left: 1rem;
 }
 
-input {
-    padding: 10px;
-    margin: 10px;
+.work-experience-section {
+   display: grid;
+   grid-template-columns: repeat(2, 40%);
+   justify-content: space-evenly;
+
 }
 
-.search-country-result {
-    min-width: 100%;
-    max-height: 200px;
-    overflow: hidden;
-    background-color: #f2f2f2;
-    margin: 10px;
-    padding: 10px;
+.work-section {
+    border-bottom: 2px solid rgb(132, 86, 0);
 }
 
-.search-country {
+.projects-section {
+    background-color: rgb(111, 2, 111);
+    color: rgb(148, 213, 148);
+}
+
+.project-btn {
+    background-color: rgba(137, 244, 137, 0.763);
+    margin: 1rem;
     cursor: pointer;
+    color: rgb(61, 0, 61);
+    padding: 1rem;
+    border-radius: 4px;
 }
 
-.first-letter {
-    background-color: blue;
-    width: 50px;
-    padding: 10px;
-    margin: 10px;
+.project-item {
+    border: solid 4px rgb(132, 86, 0);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.project-link {
+    text-decoration: none;
+    color: rgb(148, 213, 148);
+
+}
+
+.education-section {
+    text-align: right;
+    margin: 3rem;
+    padding: 3rem;
+    background-image: url("./kuvat/education.avif");
+    background-size: cover;
+    background-position: center;
     color: white;
-    border-radius: 50px;
 }
 
-.detail-name-container {
+.skills-stars {
     display: flex;
+    justify-content: center;
 }
 
-.detail-btn {
-    cursor: pointer;
-    font-weight: bolder;
-    background-color: white;
-    margin: 10px;
+.skills-stars h3{
+    width: 300px;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    color: rgb(102, 66, 1);
+    background-color: rgb(148, 213, 148);
+}
+
+.flag-name {
+    display: flex;
+    align-items: center;
+}
+
+.language-flag {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgb(102, 66, 1);
+}
+
+
+
+@media (max-width: 1250px) {
+
+   .anton-img {
+        width: 100px;
+        position: fixed;
+        right: 0;
+        top: 0;
+    } 
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: block;
+        font-size: xx-large;
+    }
+
+    .navbar-is-open {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .work-experience-section {
+        display: block;
+    }
+
+    .profile {
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .footer {
+        display: block;
+        padding: 1rem;
+    }
+
+    .education-section {
+        margin: 3px;
+        padding: 3px;
+        mix-blend-mode: darken;
+        background-image: none;
+        background-color: white;
+        color: black;
+    }
+}
+
