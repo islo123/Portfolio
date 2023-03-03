@@ -3,7 +3,7 @@ import { AiFillCloseSquare } from "react-icons/ai";
 import { MdOpenInBrowser } from "react-icons/md";
 
 export default function Work({name, company, date, duration, description}) {
-    const [ showDetail, setShowDetail] = useState(false)
+    const [ showDetail, setShowDetail ] = useState(false)
 
   return (
     <div className='work-section'>

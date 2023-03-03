@@ -77,6 +77,19 @@
     border-radius: 4px;
 }
 
+.project-active-btn {
+    background-color: rgb(61, 0, 61);
+    margin: 1rem;
+    cursor: pointer;
+    color: rgba(137, 244, 137, 0.763);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.btn {
+    transition: padding linear 0.3s;
+}
+
 .project-item {
     border: solid 4px rgb(132, 86, 0);
     margin-bottom: 1rem;
@@ -130,8 +143,35 @@
     text-decoration: none;
     color: rgb(102, 66, 1);
 }
+/* Animation */
+.slide-enter,
+.slide-exit {
+    transition: transform 1000ms ease-out;
+}
 
+.slide-enter {
+    transform: translateX(100%);
+    opacity: 0;
+}
 
+.slide-enter.slide-enter-active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slide-exit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slide-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+}
 
 @media (max-width: 1250px) {
 
