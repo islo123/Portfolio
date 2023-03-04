@@ -58,6 +58,7 @@
 .navbar-modal {
     height: 100%;
     padding-left: 1rem;
+    z-index: 900;
 }
 
 .work-name {
