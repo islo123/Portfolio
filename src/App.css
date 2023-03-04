@@ -40,6 +40,25 @@
     display: none;
 }
 
+.navbar-is-open {
+    position: absolute;
+    width: 100%;
+    background-color: aqua;
+    left: 0;
+    transition: all linear 0.5s;
+}
+
+.navbar-is-close {
+    position: absolute;
+    left: -140px;
+    transition: all linear 0.5s;
+}
+
+.navbar-modal {
+    height: 100%;
+    padding-left: 1rem;
+}
+
 .work-name {
     display: flex;
     justify-content: space-between;
@@ -86,7 +105,7 @@
     border-radius: 4px;
 }
 
-.btn {
+.category-btn {
     transition: padding linear 0.3s;
 }
 
@@ -191,7 +210,7 @@
         font-size: xx-large;
     }
 
-    .navbar-is-open {
+    .navbar-home-toggle {
         text-align: left;
         margin-left: 10px;
     }

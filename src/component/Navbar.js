@@ -15,7 +15,7 @@ import Projects from './projects/Projects';
 import Skills from './Skills';
 import WorkExperience from './work/WorkExperience';
 import { MdCastForEducation } from "react-icons/md";
-import { AiFillProject, AiTwotoneHome, AiFillStar, AiOutlineMenu } from "react-icons/ai";
+import { AiFillProject, AiTwotoneHome, AiFillStar, AiOutlineMenu, AiFillCloseSquare } from "react-icons/ai";
 import { RiPagesLine } from "react-icons/ri";
 
 
@@ -27,20 +27,14 @@ export default function Navbar() {
 
   return (
     <div>
-          <div className='navbar-menu' onClick={() => setShowNavbarLinks(!showNavbarLinks)}><AiOutlineMenu/></div>
+          <div className='navbar-menu' onClick={() => setShowNavbarLinks(!showNavbarLinks)}>{showNavbarLinks? <AiFillCloseSquare/> : <AiOutlineMenu/>}</div>
 
-          <div className='navbar-is-open'>
-              {   
-                  showNavbarLinks &&
-                      <div>
-                          <h3><Link className="navbar-link" to="/"><AiTwotoneHome/> Etusivu</Link></h3>
-                          <h3><Link className="navbar-link" to="/työkokemus"><RiPagesLine/> Työkokemus</Link></h3>
-                          <h3><Link className="navbar-link" to="/projektit"><AiFillProject/> Projektit</Link></h3>
-                          <h3><Link className="navbar-link" to="/koulutus"><MdCastForEducation/> Koulutus</Link></h3>
-                          <h3><Link className="navbar-link" to="/taidot"><AiFillStar/> Taidot</Link></h3>                         
-                      </div>
-              }
-
+          <div className={showNavbarLinks? 'navbar-is-open navbar-modal' : 'navbar-is-close navbar-modal'}>
+              <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/"><AiTwotoneHome/> Etusivu</Link></h3>
+              <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/työkokemus"><RiPagesLine/> Työkokemus</Link></h3>
+              <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/projektit"><AiFillProject/> Projektit</Link></h3>
+              <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/koulutus"><MdCastForEducation/> Koulutus</Link></h3>
+              <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/taidot"><AiFillStar/> Taidot</Link></h3>                         
           </div>
           
           <div className='navbar-links'>
