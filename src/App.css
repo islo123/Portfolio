@@ -45,14 +45,15 @@
     width: 100%;
     background-color: aqua;
     left: 0;
-    transition: all linear 0.5s;
+    transition: all linear 1s;
+    opacity: 1;
 }
 
 .navbar-is-close {
     position: absolute;
     left: -120px;
     opacity: 0;
-    transition: all linear 0.5s;
+    transition: all linear 1s;
 }
 
 .navbar-modal {
