@@ -50,7 +50,8 @@
 
 .navbar-is-close {
     position: absolute;
-    left: -140px;
+    left: -120px;
+    opacity: 0;
     transition: all linear 0.5s;
 }
 
