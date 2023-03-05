@@ -52,11 +52,11 @@ export default function Navbar() {
               timeout={2000}
             >
             <Routes location={location}>
-              <Route exact path="/" element={<Home/>}/>
-              <Route path="/työkokemus" element={<WorkExperience/>}/>
-              <Route path="/projektit" element={<Projects/>}/>
-              <Route path="/koulutus" element={<Education/>}/>
-              <Route path="/taidot" element={<Skills/>}/>
+              <Route exact path="/" element={ <Home showNavbarLinks={ showNavbarLinks }/> }/>
+              <Route path="/työkokemus" element={ <WorkExperience/> }/>
+              <Route path="/projektit" element={ <Projects/> }/>
+              <Route path="/koulutus" element={ <Education/> }/>
+              <Route path="/taidot" element={ <Skills/> }/>
             </Routes>
           </CSSTransition>
         </TransitionGroup>
