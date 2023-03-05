@@ -20,7 +20,7 @@ const oneStar = [...Array(5)].map((star, index) => {
 
 export default function Skills() {
   return (
-    <div style={{backgroundColor: '#24305E'}}>
+    <div style={{backgroundColor: '#24305E', paddingLeft: '1rem'}}>
         <div className='skills-stars'>
             <h3>HTML </h3><h3>{fiveStar}</h3>
         </div>
