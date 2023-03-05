@@ -235,13 +235,5 @@ body {
         display: block;
         padding: 1rem;
     }
-
-    .education-section {
-        margin: 3px;
-        padding: 3px;
-        background-image: none;
-        background-color: white;
-        color: black;
-    }
 }
 
