@@ -5,7 +5,7 @@ export const workExperience = [
         company: "Nordic Sovellus",
         date: "9/2022",
         duration: "2 viikkoa",
-        description: "Csharp, .net, Aws, awscli"
+        description: "Csharp, .net, Aws, awscli."
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ export const workExperience = [
         company: " Extrajaat vuokrafirma",
         date: "3/2020 - 12/2022",
         duration: "2 vuotta ja 9 kuukautta",
-        description: "Pajalla olen opiskellut web-ohjelmointia, (mm. HTML5, CSS3, JavaScript, React). Työpajalla olemme käyttäneet Scrum ohjelmistotuotantomenetelmää sekä GitHub. Olen kehittänyt tiedonhaku- ja ongelmanratkaisutaitojani."
+        description: "Kassatyöntekijä S-ryhmän kauppoissa."
     },
 
 ]

@@ -15,9 +15,9 @@ export default function PersonalInformation() {
             <p className='flag-name'><img className='language-flag' alt='Kosovon lippu' src={KSFlag}/> Albania --- äidinkieli</p>            
         </div>
 
-        <a target="_blank" className='footer-link' rel="noreferrer" href='https://github.com/islo123?tab=repositories'><AiOutlineGithub/> Harrastus projektit Github: issa</a>
+        <a target="_blank" className='footer-link' rel="noreferrer" href='https://github.com/islo123?tab=repositories'><AiOutlineGithub/> Harrastus projektit GitHub: issa</a>
         <br/>
-        <a target="_blank" className='footer-link' rel="noreferrer" href='https://www.linkedin.com/in/anton-berisha-a49a83215/'><AiFillLinkedin/> Minun linkedin profiili</a>
+        <a target="_blank" className='footer-link' rel="noreferrer" href='https://www.linkedin.com/in/anton-berisha-a49a83215/'><AiFillLinkedin/> Minun LinkedIn profiili</a>
         
         <div style={{display: 'flex'}}>
             <p style={{marginRight: '10px', alignSelf: 'center'}}><GrContact /></p>
