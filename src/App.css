@@ -38,13 +38,17 @@
     color: #24305E;
 }
 
+.anton-img {
+    margin: 1rem;
+}
+
 .navbar-menu {
     display: none;
 }
 
 body {
     background-color: #A8D0E6;
-    position: relative;
+    position: relative; /* .navbar-is-open .navbar-is-close */
 }
 
 .navbar-is-open {
