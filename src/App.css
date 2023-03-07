@@ -2,10 +2,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-color: #A8D0E6;
-}
-
 .navbar-links {
     display: flex;
     justify-content: space-around;
@@ -44,6 +40,11 @@ body {
 
 .navbar-menu {
     display: none;
+}
+
+body {
+    background-color: #A8D0E6;
+    position: relative;
 }
 
 .navbar-is-open {
