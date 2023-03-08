@@ -41,6 +41,7 @@ export const projects = [
         date: "1/2022 - 05/2022",
         description: "Leikkilupa ominaisuuksien ylläpito. Käytetyt työkalut: Angular, Jasmine, MySql, angular i18n(internationalization), ngx sharebuttons",
         link: "https://www.hoplop.fi/",
+        sitePic: require("./kuvat/Hoplop.png"),
         category: "Työ projektit"
     },
     {
@@ -49,6 +50,7 @@ export const projects = [
         date: "1/2022 - 05/2022",
         description: "Bugien korjaminen. Käytetyt työkalut: C#, .net, AWS.",
         link: null,
+        sitePic: null,
         category: "Työ projektit"
     },
     {
@@ -57,6 +59,7 @@ export const projects = [
         date: null,
         description: "Mern stack. CRUD. Auth.",
         link: "https://hr-tyokalu.onrender.com",
+        sitePic: require("./kuvat/hr.png"),
         category: "Harrastus projektit"
     },
     {
@@ -73,6 +76,7 @@ export const projects = [
         date: null,
         description: "Mern stack. useReducer ja useContext",
         link: "https://todo2-app.onrender.com/",
+        sitePic: null,
         category: "Harrastus projektit"
     },
 ]

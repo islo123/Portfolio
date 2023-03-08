@@ -120,6 +120,10 @@ body {
     border-radius: 4px;
 }
 
+.site-img {
+    width: 10%;
+}
+
 .category-btn {
     transition: padding linear 0.3s;
 }
@@ -227,6 +231,10 @@ body {
     .navbar-home-toggle {
         text-align: left;
         margin-left: 10px;
+    }
+
+    .site-img {
+        width: 50%;
     }
 
     .work-experience-section {
