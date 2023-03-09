@@ -30,6 +30,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #A8D0E6;
+    font-size: 3rem;
 }
 
 .anton-img {
@@ -222,6 +223,14 @@ body {
    .anton-img {
         width: 100px;
     } 
+
+    .home {
+        font-size: 1rem;
+    }
+
+    .profile {
+        width: auto;
+    }
 
     .navbar-links {
         display: none;
