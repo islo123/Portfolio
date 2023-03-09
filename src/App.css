@@ -93,8 +93,8 @@ body {
 }
 
 .projects-section {
-    background-color: #F76C6C;
-    color: #24305E;
+    background-color: #24305E;
+    color: #F76C6C;
 }
 
 .about {
@@ -137,9 +137,11 @@ body {
 }
 
 .project-item {
-    border: solid 4px #24305E;
-    margin-bottom: 1rem;
+    border: solid 4px #F76C6C;
+    margin: 1rem;
     padding: 1rem;
+    background-color: #24305E;
+    
 }
 
 .project-link {
