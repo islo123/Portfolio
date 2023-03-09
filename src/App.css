@@ -32,12 +32,6 @@
     background-color: #A8D0E6;
 }
 
-.profile {
-    width: 400px;
-    margin-left: 10px;
-    color: #24305E;
-}
-
 .anton-img {
     margin: 1rem;
     border-radius: 1rem;
@@ -100,6 +94,19 @@ body {
 .projects-section {
     background-color: #F76C6C;
     color: #24305E;
+}
+
+.about {
+    margin: 1rem;
+}
+
+.profile {
+    width: 400px;
+    color: #24305E;
+}
+
+.anton-img {
+    width: 300px;
 }
 
 .project-btn {
@@ -214,9 +221,6 @@ body {
 
    .anton-img {
         width: 100px;
-        position: fixed;
-        right: 0;
-        top: 0;
     } 
 
     .navbar-links {
@@ -239,11 +243,6 @@ body {
 
     .work-experience-section {
         display: block;
-    }
-
-    .profile {
-        width: auto;
-        margin-left: 10px;
     }
 
     .footer {

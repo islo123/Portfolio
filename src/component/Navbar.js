@@ -16,7 +16,9 @@ import Skills from './Skills';
 import WorkExperience from './work/WorkExperience';
 import { MdCastForEducation } from "react-icons/md";
 import { AiFillProject, AiTwotoneHome, AiFillStar, AiOutlineMenu, AiFillCloseSquare } from "react-icons/ai";
+import { FcAbout } from "react-icons/fc";
 import { RiPagesLine } from "react-icons/ri";
+import About from './About';
 
 
 export default function Navbar() {
@@ -31,6 +33,7 @@ export default function Navbar() {
 
           <div className={showNavbarLinks? 'navbar-is-open navbar-modal' : 'navbar-is-close navbar-modal'}>
               <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/"><AiTwotoneHome/> Etusivu</Link></h3>
+              <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/minusta"><AiTwotoneHome/> Minusta</Link></h3>
               <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/työkokemus"><RiPagesLine/> Työkokemus</Link></h3>
               <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/projektit"><AiFillProject/> Projektit</Link></h3>
               <h3 onClick={() => setShowNavbarLinks(!showNavbarLinks)}><Link className="navbar-link" to="/koulutus"><MdCastForEducation/> Koulutus</Link></h3>
@@ -40,6 +43,7 @@ export default function Navbar() {
           <div className='navbar-links'>
               <h1 className='navbar-anton'>Anton <span className='dot'>.</span></h1>
               <h3><Link className="navbar-link" to="/"><AiTwotoneHome/> Etusivu</Link></h3>
+              <h3><Link className="navbar-link" to="/minusta"><FcAbout/> Minusta</Link></h3>
               <h3><Link className="navbar-link" to="/työkokemus"><RiPagesLine/> Työkokemus</Link></h3>
               <h3><Link className="navbar-link" to="/projektit"><AiFillProject/> Projektit</Link></h3>
               <h3><Link className="navbar-link" to="/koulutus"><MdCastForEducation/> Koulutus</Link></h3>
@@ -53,6 +57,7 @@ export default function Navbar() {
             >
             <Routes location={location}>
               <Route exact path="/" element={ <Home showNavbarLinks={ showNavbarLinks }/> }/>
+              <Route path="/minusta" element={ <About/> }/>
               <Route path="/työkokemus" element={ <WorkExperience/> }/>
               <Route path="/projektit" element={ <Projects/> }/>
               <Route path="/koulutus" element={ <Education/> }/>
