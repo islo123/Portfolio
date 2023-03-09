@@ -8,13 +8,16 @@ import Projects from './projects/Projects';
 export default function About() {
   return (
     <div className='about'>
-        <Profile/>
-        <div className='about-language'>
-            <h4>Kielet</h4>
-            <p className='flag-name'><img className='language-flag' alt='Suomen lippu' src={finFlag}/> Suomi --- erinomainen</p>
-            <p className='flag-name'><img className='language-flag' alt='Iso Britannia lippu' src={GBFlag}/> Englanti --- hyvä</p>
-            <p className='flag-name'><img className='language-flag' alt='Kosovon lippu' src={KSFlag}/> Albania --- äidinkieli</p>            
+        <div className='about-section'>
+            <Profile/>
+            <div className='about-language'>
+                <h4 style={{marginTop: '16px'}}>Kielet</h4>
+                <p className='flag-name'><img className='language-flag' alt='Suomen lippu' src={finFlag}/> Suomi --- erinomainen</p>
+                <p className='flag-name'><img className='language-flag' alt='Iso Britannia lippu' src={GBFlag}/> Englanti --- hyvä</p>
+                <p className='flag-name'><img className='language-flag' alt='Kosovon lippu' src={KSFlag}/> Albania --- äidinkieli</p>            
+            </div>            
         </div>
+
         <Projects/>
     </div>
   )

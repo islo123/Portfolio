@@ -101,6 +101,11 @@ body {
     margin: 1rem;
 }
 
+.about-section {
+    display: flex;
+    justify-content: space-around;
+}
+
 .profile {
     width: 400px;
     color: #24305E;
