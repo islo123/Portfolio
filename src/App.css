@@ -103,7 +103,7 @@ body {
 
 .about-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .profile {
@@ -237,6 +237,10 @@ body {
 
     .profile {
         width: auto;
+    }
+
+    .about-section {
+        display: block;
     }
 
     .navbar-links {
