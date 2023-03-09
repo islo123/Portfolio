@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AiFillCloseSquare } from "react-icons/ai";
-import { MdOpenInBrowser } from "react-icons/md";
+import { MdOpenInFull } from "react-icons/md";
 
 export default function Work({name, company, date, duration, description}) {
     const [ showDetail, setShowDetail ] = useState(false)
@@ -8,7 +8,7 @@ export default function Work({name, company, date, duration, description}) {
   return (
     <div className='work-section'>
       <div className='work-name'>
-        <h3>{name}</h3><h3 className='open-work-detail' onClick={() => setShowDetail(!showDetail)}>{showDetail? <AiFillCloseSquare/> : <MdOpenInBrowser/>}</h3>
+        <h3>{name}</h3><h3 className='open-work-detail' onClick={() => setShowDetail(!showDetail)}>{showDetail? <AiFillCloseSquare/> : <MdOpenInFull/>}</h3>
       </div>
       <div>
         { showDetail && 

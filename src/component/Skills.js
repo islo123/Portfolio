@@ -2,19 +2,19 @@ import React from 'react'
 import { AiTwotoneStar } from "react-icons/ai";
 
 const fiveStar = [...Array(5)].map((star, index) => {
-    return <AiTwotoneStar key={index} size="30" style={{color: '#A8D0E6',}}/>
+    return <AiTwotoneStar key={index} size="30" style={{color: '#F8E9A1',}}/>
 })
 
 const threeStar = [...Array(5)].map((star, index) => {
-    return <AiTwotoneStar key={index} size="30" color={index > 2? "" : "#A8D0E6"} />
+    return <AiTwotoneStar key={index} size="30" color={index > 2? "" : "#F8E9A1"} />
 })
 
 const twoStar = [...Array(5)].map((star, index) => {
-    return <AiTwotoneStar key={index} size="30" color={index > 1? "" : "#A8D0E6"} />
+    return <AiTwotoneStar key={index} size="30" color={index > 1? "" : "#F8E9A1"} />
 })
 
 const oneStar = [...Array(5)].map((star, index) => {
-    return <AiTwotoneStar key={index} size="30" color={index > 0? "" : "#A8D0E6"} />
+    return <AiTwotoneStar key={index} size="30" color={index > 0? "" : "#F8E9A1"} />
 })
 
 
