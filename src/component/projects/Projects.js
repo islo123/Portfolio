@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import { projects } from '../../data'
 import Project from './Project';
 import ProjectsCategory from './ProjectsCategory';
@@ -14,7 +15,7 @@ export default function Projects () {
         setActive(category)
 
         if ( category === "Kaikki projektit" ) {
-          setProjectsData(projects)
+            setProjectsData(projects)
           return
         }
 
@@ -24,8 +25,8 @@ export default function Projects () {
 
   return (
     <div className='projects-section'>
-        <ProjectsCategory allProjects={allProjects} active={active} filterBtn={filterBtn}/>
-        <Project projectsData={projectsData} active={active}  />
+        <ProjectsCategory allProjects={allProjects} active={active} filterBtn={filterBtn} />
+        <Project projectsData={projectsData} active={active} />
     </div>
   )
 }

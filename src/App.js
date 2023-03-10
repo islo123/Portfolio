@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './component/Navbar';
-import PersonalInformation from './component/PersonalInformation';
+import Footer from './component/Footer';
+
 import { BrowserRouter as Router } from "react-router-dom"
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         <Navbar/>
       </Router>
       <hr/>
-      <PersonalInformation/>
+      <Footer/>
     </div>
   );
 }

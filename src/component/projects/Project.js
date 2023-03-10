@@ -1,12 +1,13 @@
 import React from 'react'
+
 import { motion } from "framer-motion";
 
 export default function Project({ projectsData, active }) {
 
   return (
-    <div>
+    <div style={{padding: '1rem'}}>
         {
-            active !== "" &&   projectsData.map(({name, id, date, description, link, sitePic }) => {
+            active !== "" && projectsData.map(({ name, id, date, description, link, sitePic }) => {
                 return (
                     <motion.div 
                         style={{ overflow: "hidden" }}
@@ -15,14 +16,13 @@ export default function Project({ projectsData, active }) {
                         animate={{ transform: "scale(1)" }}
                         exit={{ transform: "scale(0)" }}
                         className='project-item' 
-                        key={id}
+                        key={ id }
                     >
                         <p>{name}</p>
                         <p>{date}</p>
                         <p>{description}</p>
-                        {
-                            sitePic && <div><img className='site-img' alt={name} src={sitePic}/></div>
-                        }
+
+                        { sitePic && <div><img className='site-img' alt={name} src={sitePic}/></div> }
                         
                         { link && <a className='project-link' href={link} rel="noreferrer" alt="hr-työkalu" target="_blank">Avaa sivu</a>}
                     </motion.div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Profile from './Profile'
+import Projects from './projects/Projects';
 import finFlag from '../kuvat/Fin-flag.png'
 import GBFlag from '../kuvat/GB-flag.png'
 import KSFlag from '../kuvat/KS-flag.png'
-import Projects from './projects/Projects';
 
 export default function About() {
   return (
